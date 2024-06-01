@@ -1,0 +1,122 @@
+\section{数学 常識問題}
+
+\subsubsection{ガウス積分}
+\barquo{
+
+以下のような定積分を\textgt{ガウス積分}と呼ぶ。
+\begin{equation}
+  \int_{-\infty}^{\infty} e^{-ax^2} \ dx = \sqrt{\frac{\pi}{a}}
+  \label{eq:ガウス積分}
+\end{equation}
+
+\begin{description}
+  \item[(i)] 式(\ref{eq:ガウス積分})を導出せよ。
+  \item[(ii)] 
+  式(\ref{eq:正規分布の密度関数})で定める関数$f(x)$を$x$の全区間で積分したとき、その値が$1$となることを確かめよ。
+    \begin{equation}
+      f(x) = \frac{1}{\sqrt{2 \pi} \sigma} \exp \left\{ - \frac{(x - \mu)^2}{2 \sigma^2} \right\}
+      \label{eq:正規分布の密度関数}
+    \end{equation}
+
+  \;
+  
+
+\end{description}
+
+（追記）
+
+式(\ref{eq:正規分布の密度関数})は正規分布の確率密度関数である。
+この関数はガウス積分の被積分関数を適当に平行移動させて、適当に定数倍したような形をしている。
+
+\rightline{参考：\cite{数研微積分}p.268-269}
+}
+
+\newpage
+
+\subsubsection{ガンマ関数}
+\barquo{
+任意の正の実数$s$に対して
+\[
+\Gamma (s) = \int_{0}^{\infty} e^{-x} x^{s-1} dx
+\]
+によって定める関数$\Gamma (s)$を\textgt{ガンマ関数}と呼ぶ。
+
+ガンマ関数について以下の性質を証明せよ。
+\begin{description}
+  \item[(i)] 任意の正の実数$s$について、$\Gamma (s+1) = s\Gamma(s)$
+  \item[(ii)] 任意の自然数$n$について、$\Gamma (n) = (n-1)!$
+  \item[(iii)] $\displaystyle \Gamma \left ( \frac{1}{2} \right ) =  \sqrt{\pi}$
+\end{description}
+\rightline{参考：\cite{数研微積分}p.157, 270}
+}
+
+\newpage
+
+\subsubsection{ベータ関数}
+\barquo{
+任意の正の実数$p, q$に対して
+\[
+B (p, q) = \int_{0}^{1} x^{p-1} (1-x)^{q-1} dx
+\]
+によって定める関数$B (p, q)$を\textgt{ベータ関数}と呼ぶ。
+
+ベータ関数について以下の性質を証明せよ。
+\begin{description}
+  \item[(i)] 任意の正の実数$p, q$について、$B(p, q) = B(q, p)$
+  \item[(ii)] 任意の正の実数$p, q$について、$\displaystyle B(p, q+1) = \frac{q}{p} B(p+1, q)$
+  \item[(iii)] 任意の正の実数$p, q$について、$\displaystyle B(p, q) = \frac{\Gamma (p) \Gamma (q)}{\Gamma (p+q)}$
+\end{description}
+\rightline{参考：\cite{数研微積分}p.158}
+}
+
+\newpage
+
+\subsubsection{テイラー展開・マクローリン展開}
+\barquo{
+関数$f(x)$が$x=a$の近傍で何回でも微分可能である（すなわち$C^{\infty}$級である）とき、
+\[
+f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)} (a)}{n!}  (x-a)^n 
+\]
+を$f(x)$の$x=a$における\textgt{テイラー展開}と呼ぶ。
+特に、$x=0$の場合
+\[
+f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)} (0)}{n!}  x^n 
+\]
+を$f(x)$の\textgt{マクローリン展開}と呼ぶ。
+
+次の関数のマクローリン展開を求めよ。
+\begin{description}
+  \item[(i)] $e^x$
+  \item[(ii)] $\log (1+x)$
+  \item[(iii)] $\displaystyle \frac{x}{(1-2x)^2}$ 
+\end{description}
+\rightline{参考：\cite{数研微積分}p.312}
+}
+
+
+\newpage
+
+\subsubsection{ロピタルの定理}
+\barquo{
+$\displaystyle \lim_{x \rightarrow a} \frac{f(x)}{g(x)}$が$\displaystyle \frac{0}{0}$
+または$\displaystyle \frac{\infty}{\infty}$
+の不定形で「ある条件」を満たせば、
+\[
+  \lim_{x \rightarrow a} \frac{f(x)}{g(x)} =  \lim_{x \rightarrow a} \frac{f'(x)}{g'(x)}
+\]
+が成り立つ。
+これを\textgt{ロピタルの定理}と呼ぶ。
+（「ある条件」の詳細については参考文献に譲るが、損保数理で出てくる関数だったらだいたい条件を満たすはず。たぶん）
+
+以下の問題に答えよ。
+\begin{description}
+  \item[(i)] $\displaystyle \lim_{x \rightarrow 0}\frac{\log (\cos x)}{x^2}$を求めよ。
+  \item[(ii)] $\displaystyle \lim_{x \rightarrow 0}\frac{\log(x+1) - x \cos x}{1 - \cos x}$を求めよ。
+  \item[(iii)] $\displaystyle \lim_{x \rightarrow \infty} x ^{1/x}$ を求めよ。
+  \item[(iv)] 2次元クレイントンコピュラ$C(u, v) = (u^{-\alpha} + v^{-\alpha} - 1)^{- 1 / \alpha}$の右裾従属係数$\lambda_u$を求めよ。
+\end{description}
+
+\rightline{参考：\cite{数研微積分}p.112-113、\cite{美しい物語}\url{https://manabitimes.jp/math/748}}
+}
+
+\newpage

@@ -1,0 +1,83 @@
+\section{リスク評価の数理}
+
+\subsubsection{コピュラ\textcircled{1}}
+\barquo{
+$X \sim U(0,1)$であり、ある$0 < p < 1$について
+\begin{align*}
+  Y = \begin{cases}
+    \frac{p - X}{p} := g(X) & (0 \leq X \leq p) \\
+    \frac{X - p}{1-p} := h(X)x& (p < X \leq 1)
+  \end{cases}
+\end{align*}
+であるとき、$X$と$Y$に対するコピュラ$C(u, v)$を求めよ。
+
+\rightline{\cite{アク数学シリーズ}例題11.1 p.232}
+}
+
+\newpage
+
+\subsubsection{コピュラ\textcircled{2}}
+\barquo{
+$X$と$Y$に対するコピュラを$C(u, v)$とする。
+$X$と$Z$が共単調であり、$Y$と$W$が共単調であるとき、
+$Z$と$W$に対するコピュラを$C(u, v)$を用いて表せ。
+
+\rightline{\cite{アク数学シリーズ}例題11.2 p.233}
+}
+
+\newpage
+
+\subsubsection{コピュラ\textcircled{3}}
+\barquo{
+分布関数
+\[
+  F_{X, Y}(x, y) = \exp \Big(- (e^{- \theta x} + e^{ - \theta y})^{\frac{1}{\theta}} \Big)
+\]
+に対するコピュラがパラメータ$\theta$のグンベル・コピュラであることを示せ。
+
+\rightline{\cite{アク数学シリーズ}例題11.3 p.240}
+}
+
+\newpage
+
+\subsubsection{コピュラ\textcircled{4}}
+\barquo{
+確率変数ベクトル$(U, V)$のコピュラと$(1-U, 1-V)$のコピュラが同一であるとき、そのコピュラは\textgt{放射対称}であるという。
+
+フランク・コピュラが放射対称であることを示せ。
+
+\rightline{\cite{アク数学シリーズ}例題11.4 p.242}
+}
+
+\newpage
+
+\subsubsection{コピュラ\textcircled{5}}
+\barquo{
+$X, Y$の同時密度関数が
+\[
+  f_{X, Y} (x, y) = \begin{cases}
+    2 & (0 \leq x, y, x+y \leq 1) \\
+    0 & (その他)
+  \end{cases}
+\]
+であるとき、$X, Y$のケンドールの$\tau$とスピアマンの$\rho$を求めよ。
+
+\rightline{\cite{アク数学シリーズ}例題11.5 p.266}
+}
+
+\newpage
+
+\subsubsection{コピュラ\textcircled{6}}
+\barquo{
+$\phi(t)$が$0<t<1$で2回微分可能であるとき、
+この$\phi$を生成作用素とするアルキメデス型コピュラに対する
+ケンドールの$\tau$が
+\[
+\tau = 1 + 4 \int_{0}^{1} \frac{\phi(t)}{\phi'(t)} dt  
+\]
+であることを示せ。
+
+\rightline{\cite{アク数学シリーズ}例題11.8 p.270}
+}
+
+\newpage

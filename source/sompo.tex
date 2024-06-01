@@ -1,0 +1,83 @@
+\documentclass[10pt]{jsarticle}%文字サイズが10ptのjsarticle
+
+\input{preamble.tex}
+
+
+\setcounter{tocdepth}{3}%目次に含めるレベル。1ならsectionまで。2ならsubsectionまで。3ならsubsubsectionまで。
+\begin{document}
+
+
+
+\title{損保数理の前提知識}
+\author{hyaraguchi}
+\date{2024年2月25日}
+\maketitle
+
+
+
+
+\tableofcontents%目次
+
+\newpage
+
+\section{はじめに}
+
+
+本資料は公益社団法人日本アクチュアリー会の資格試験「損保数理」の対策問題集です。
+損保数理WBでは演習量が足りなかったり、前提知識として扱われている分野の問題を中心に蒐集しております。
+問題は、一部自作問題も含んでおりますが、基本的には日本アクチュアリー会HP（\url{https://www.actuaries.jp/lib/collection/}）や参考文献リストの著作から引用しております。
+
+本資料はhyaraguchiの私的利用を目的に作成されたものです。
+著作権者に著作物の使用許可を取っておりませんので、本資料の複写・転載を禁じます。
+個人の学習の範囲内でご使用ください。
+
+解答の配布はしておりません。
+どうしても欲しい方はhyaraguchi宛にご連絡ください。
+本資料を持っている方はhyaraguchi周辺のごく限られた範囲内に限られているはずですので、連絡先は明記しません。
+ご理解のほどよろしくお願いいたします。
+
+
+\newpage
+
+\input{sec0math.tex}
+
+\newpage
+
+\input{sec2.tex}
+
+
+
+\newpage
+
+\input{sec8.tex}
+
+
+\newpage
+
+\input{sec10.tex}
+
+\newpage
+
+\input{knowledge.tex}
+
+
+
+
+\newpage
+
+\begin{thebibliography}{1}%参考文献の リスト
+  \bibitem[過去問]{過去問} 公益社団法人 日本アクチュアリー会 資格試験過去問題集 \url{https://www.actuaries.jp/lib/collection/} (最終閲覧日：2023/12/10)
+  \bibitem[教科書]{教科書} 日本アクチュアリー会『損保数理』(日本アクチュアリー会, 2011)
+  \bibitem[モデリング]{モデリング} 日本アクチュアリー会『モデリング』(日本アクチュアリー会, 2005)
+  \bibitem[リスク・セオリー]{リスク・セオリー} 岩沢宏和『リスク・セオリーの基礎』(培風館, 2010)
+  \bibitem[アク数学シリーズ]{アク数学シリーズ} 岩沢宏和, 黒田耕嗣『アクチュアリー数学シリーズ4 損害保険数理』(日本評論社, 2015)
+  \bibitem[ストラテジー]{ストラテジー} MAH, 平井卓也, 玉岡一史『アクチュアリー試験 合格へのストラテジー 損保数理』(東京図書, 2019)
+  \bibitem[例題で学ぶ]{例題で学ぶ} 小暮雅一, 東出純『例題で学ぶ損害保険数理 第2版』(共立出版, 2016)
+  \bibitem[難問題の系統]{難問題の系統}CAR他「難問題の系統とその解き方 損保数理」\url{}(最終閲覧日：2023/12/10)
+  \bibitem[弱点克服]{弱点克服} 藤田岳彦『弱点克服 大学生の確率・統計』(東京図書, 2010)
+  \bibitem[数研微積分]{数研微積分} 加藤文元『大学教養 微分積分』(数研出版, 2019)
+  \bibitem[美しい物語]{美しい物語} マスオ「高校数学の美しい物語」\url{https://manabitimes.jp/math}(最終閲覧日：2023/12/10)
+\end{thebibliography}
+
+
+\end{document}

@@ -1,0 +1,60 @@
+\section{クレームの分析}
+
+\subsubsection{混合分布}
+\barquo{
+確率変数$Y$の分布関数$F_Y (y)$が条件付分布関数$F_{X | \Theta} (y | \theta)$と密度関数$f_{\Theta} (\theta)$
+を用いて、
+\[
+  F_Y (y) = \int_{-\infty}^{\infty} F_{X | \Theta} (y | \theta) f_{\Theta} (\theta) d\theta
+\]
+と表されるとき、$Y$の従う分布は、$F_{X | \Theta} (y | \theta)$によって表される分布の\textgt{混合分布}
+であるという。
+
+有名な混合分布の例を以下に列挙するので、これらが成り立つことを証明せよ。
+\begin{description}
+  \item[(i)] $N \sim Po(\Theta)$かつ$ \Theta \sim \Gamma(\alpha, \beta)$のとき、$N \sim NB \Big(\alpha, \frac{\beta}{1+\beta} \Big)$となる。
+  \item[(ii)]  $N \sim Bin(\Theta, p)$かつ$ \Theta \sim Po(\lambda)$のとき、$N \sim Po(\lambda p)$となる。
+  \item[(iii)] $N \sim N(\Theta, \sigma^2)$かつ$ \Theta \sim N(\mu_0, \sigma_0^2)$のとき、$N \sim  N(\mu_0, \sigma^2 + \sigma_0^2)$となる。
+  \item[(iv)] $N \sim Bin(1, p)$かつ$\Theta \sim \beta eta(p, q)$のとき、$N \sim Bin \Big(1, \frac{p}{p+q} \Big)$
+\end{description}
+
+\rightline{参考：\cite{リスク・セオリー}p.66-68}
+}
+
+\newpage
+
+\subsubsection{複合分布\textcircled{1}}
+\barquo{
+  $X_1, X_2, \cdots$を独立同一分布に従う確率変数の列とし、$N$を$X_1, X_2, \cdots$とは独立な確率変数とする。
+  \[
+    S = X_1 + X_2 + \cdots + X_N
+  \]
+  と$S$を定義するとき、$S$が従う分布は$X$の従う分布を$N$の従う分布で複合した\textgt{複合分布}であるという。
+
+  有名な複合分布の例を以下に列挙するので、これらが成り立つことを証明せよ。
+  \begin{description}
+    \item[(i)] $X \sim Bin(1, p)$かつ$ N \sim Po(\lambda)$のとき、$S \sim Po(\lambda p)$となる。
+    \item[(ii)]  $X \sim Bin(1, p)$かつ$ N \sim NB(\alpha, r)$のとき、$S \sim NB \Big(\alpha, \frac{r}{r + (1-r)p} \Big)$となる。
+    \item[(iii)] $X \sim Bin(1, p)$かつ$ N \sim Bin(n, r)$のとき、$S \sim Bin (n, rp)$となる。
+    \item[(iv)] $N \sim Po(\lambda)$かつ$N\sim LS(p)$（対数級数分布）のとき、$S \sim NB \Big(- \frac{\lambda}{\log p}, p \Big)$となる。
+  \end{description}
+
+  \rightline{参考：\cite{リスク・セオリー}p.69-72}
+}
+
+\newpage
+
+\subsubsection{複合分布\textcircled{2}}
+\barquo{
+  複合分布の特性値を求めるための公式を以下に列挙する。
+  これらが成り立つことを、条件付き期待値等の性質を使って証明せよ。
+  \begin{description}
+    \item[(i)] $E(S) = E(N)E(X)$
+    \item[(ii)] $V(S) = E(N)V(X) + V(N)E(X)^2$
+    \item[(iii)] $M_S(t) = M_N(\log M_X (t)) = M_N (C_X(t))$
+  \end{description}
+
+  \rightline{参考：\cite{リスク・セオリー}p.69-72}
+}
+
+\newpage
